@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
@@ -14,14 +13,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { MyComponentComponent } from './my-component/my-component.component';
-
+import { NgChartsModule } from 'ng2-charts';
+import { NgApexchartsModule } from 'ng-apexcharts';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     DashboardComponent,
-    MyComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,8 +32,11 @@ import { MyComponentComponent } from './my-component/my-component.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    NgApexchartsModule
   ],
+
+
   providers: [],
   bootstrap: [AppComponent]
 })
